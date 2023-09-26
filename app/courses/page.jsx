@@ -1,5 +1,5 @@
 'use client'
-import Courses from '@/Components/Courses'
+import Courses from '@/components/Courses'
 import CourseSearch from '@/components/CourseSearch'
 import React, { useState, useEffect } from 'react'
 import LoadingPage from '../loading'
