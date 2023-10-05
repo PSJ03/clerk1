@@ -22,10 +22,10 @@ const RepoDirs = async ({ name }) => {
       <h3 className="text-xl font-bold">Directories</h3>
       <ul>
         {dirs.map((dir) => (
-          <li key={dir.path}>
+          <li key={dir.path} className="m-5">
             <Link
               href={`https://github.com/${username}/${name}/tree/master/${dir.path}`}
-              className="underline"
+              className="no-underline p-1.5 bg-gray-400 rounded-md"
             >
               {dir.path}
             </Link>

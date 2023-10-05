@@ -24,18 +24,18 @@ const ReposPage = async () => {
       </h2>
       <ul>
         {repos.map((repo) => (
-          <li key={repo.id} className="bg-gray-100 m-4 p-4 rounded-md">
+          <li key={repo.id} className="bg-gray-600 m-4 p-4 rounded-md">
             <Link href={`/repos/${repo.name}`}>
               <h3 className="text-xl font-bold">{repo.name}</h3>
               <p>{repo.description}</p>
-              <div className="flex justify-start items-center">
-                <span className="flext items-center gap-1">
-                  <FaStar /> {repo.stargazers_count}&nbsp;&nbsp;&nbsp;
+              <div className="flex justify-start items-center-4">
+                <span className="flex items-center gap-1 pr-3">
+                  <FaStar /> {repo.stargazers_count}
                 </span>
-                <span className="flext items-center gap-1">
-                  <FaCodeBranch /> {repo.forks_count}&nbsp;&nbsp;&nbsp;
+                <span className="flex items-center gap-1 pr-3">
+                  <FaCodeBranch /> {repo.forks_count}
                 </span>
-                <span className="flext items-center gap-1">
+                <span className="flex items-center gap-1">
                   <FaEye /> {repo.stargazers_count}
                 </span>
               </div>
